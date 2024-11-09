@@ -1,3 +1,4 @@
 service : {
-    "greet": (text) -> (text) query;
+    "greet": (text) -> (text);
+    "get_submitted_names" : () -> (vec text) query;
 }
