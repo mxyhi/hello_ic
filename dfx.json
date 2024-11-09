@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "hello_ic_backend": {
+      "candid": "src/hello_ic_backend/hello_ic_backend.did",
+      "package": "hello_ic_backend",
+      "type": "rust"
+    },
+    "hello_ic_frontend": {
+      "dependencies": [
+        "hello_ic_backend"
+      ],
+      "source": [
+        "src/hello_ic_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello_ic_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
